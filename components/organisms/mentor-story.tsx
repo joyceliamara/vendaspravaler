@@ -64,6 +64,7 @@ export function MentorStory() {
             <SectionTitle
               title="Quem é o cara que vive de vendas há 25 anos, já ajudou 15.977 clientes e gerou R$ 63.000.000,00 em faturamento?"
               align="left"
+              highlightWords={['vive de vendas']}
             />
             <div className="space-y-4 md:space-y-6">
               <div className="p-4 md:p-6 bg-background/50 backdrop-blur-sm rounded-xl border border-primary/10">

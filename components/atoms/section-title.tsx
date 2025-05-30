@@ -36,7 +36,7 @@ export function SectionTitle({
       className={cn("mb-8 leading-none", alignmentClasses[align], className)}
     >
       <h2
-        className="text-2xl md:text-1xl lg:text-4xl font-bold tracking-tight"
+        className="text-2xl md:text-1xl lg:text-4xl font-medium tracking-tight"
         dangerouslySetInnerHTML={{ __html: highlightedTitle }}
       />
       {subtitle && (

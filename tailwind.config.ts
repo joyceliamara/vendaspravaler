@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+import { fontFamily } from "tailwindcss/defaultTheme";
 
 const config: Config = {
   darkMode: ["class"],
@@ -64,8 +65,8 @@ const config: Config = {
         sm: "calc(var(--radius) - 4px)",
       },
       fontFamily: {
-        poppins: ["var(--font-poppins)"],
-        inter: ["var(--font-inter)"],
+        sans: ['var(--font-ubuntu)', ...fontFamily.sans],
+        ubuntu: ['var(--font-ubuntu)'],
       },
       keyframes: {
         "accordion-down": {

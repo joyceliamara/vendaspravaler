@@ -3,17 +3,13 @@ import type { Metadata } from "next/dist/lib/metadata/types/metadata-interface";
 import { Poppins, Inter } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
+import { Ubuntu } from 'next/font/google';
 
-const poppins = Poppins({
+const ubuntu = Ubuntu({
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
-  variable: "--font-poppins",
-});
-
-const inter = Inter({
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
-  variable: "--font-inter",
+  weight: ["400", "500", "700"],
+  variable: "--font-ubuntu",
+  display: "swap",
 });
 
 export const metadata: Metadata = {
@@ -54,22 +50,8 @@ export default function RootLayout({
   return (
     <html lang="pt-BR" suppressHydrationWarning>
       <head>
-        <link
-          rel="preload"
-          href="/fonts/Poppins-Bold.woff2"
-          as="font"
-          type="font/woff2"
-          crossOrigin="anonymous"
-        />
-        <link
-          rel="preload"
-          href="/fonts/Inter-Regular.woff2"
-          as="font"
-          type="font/woff2"
-          crossOrigin="anonymous"
-        />
       </head>
-      <body className={`${poppins.variable} ${inter.variable} bg-background`}>
+      <body className={`${ubuntu.variable} bg-background`}>
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"
