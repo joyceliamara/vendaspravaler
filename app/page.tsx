@@ -1,7 +1,7 @@
 import { HeroSection } from "@/components/organisms/hero-section";
 import { SocialProofBar } from "@/components/organisms/social-proof-bar";
 import { ValuePillars } from "@/components/organisms/value-pillars";
-import { AboutMentor } from "@/components/organisms/about-mentor";
+import { CustomerIssues } from "@/components/organisms/about-mentor";
 import { FooterCTADouble } from "@/components/organisms/footer-cta-double";
 import { MentorStory } from "@/components/organisms/mentor-story";
 import { TransformationShowcase } from "@/components/organisms/transformation-showcase";
@@ -17,11 +17,11 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between w-full">
+    <main className="flex min-h-screen flex-col items-center justify-between w-full overflow-x-hidden">
       <HeroSection />
       <SocialProofBar />
       <MentorStory />
-      <AboutMentor />
+      <CustomerIssues />
       <ValuePillars />
       <TestimonialCarousel />
       <TransformationShowcase />
