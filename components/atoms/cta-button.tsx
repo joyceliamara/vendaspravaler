@@ -29,7 +29,7 @@ export function CTAButton({
 }: CTAButtonProps) {
   const variantClasses = {
     primary: "bg-primary text-primary-foreground hover:bg-primary/90",
-    secondary: "bg-secondary text-secondary-foreground hover:bg-secondary/80",
+    secondary: "bg-primary/15 text-primary hover:bg-secondary/80",
     outline:
       "border border-input bg-background hover:bg-accent hover:text-accent-foreground",
   };
@@ -48,11 +48,14 @@ export function CTAButton({
         variantClasses[variant],
         sizeClasses[size],
         fullWidth ? "w-full" : "",
-        "w-full md:w-auto text-base sm:text-lg px-4 py-6 bg-primary hover:bg-primary/90 text-primary-foreground font-bold tracking-wide transition-all duration-300 transform hover:scale-105",
+        "relative w-full md:w-auto text-base sm:text-base px-4 py-6 bg-primary hover:bg-primary/90 text-primary-foreground font-bold tracking-wide transition-all duration-300 transform hover:scale-105 group",
         className
       )}
     >
-      <Link href={url} target="_blank">
+      {/* <span className="absolute inset-0 z-0 inline-flex h-full w-full animate-ping bg-primary opacity-75 group-hover:animate-none rounded-lg" />
+      <span className="absolute inset-0 z-0 inline-flex h-full w-full animate-ping bg-primary opacity-60 group-hover:animate-none rounded-lg" /> */}
+
+      <Link href={url} target="_blank" className="relative z-10 block">
         {text}
       </Link>
     </Button>

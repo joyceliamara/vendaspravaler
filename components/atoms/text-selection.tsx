@@ -11,7 +11,7 @@ export default function TextSelection({
 }: IOSTextSelectionProps) {
   return (
     <div className={`relative inline-block ${className}`}>
-      <span className="text-white text-2xl font-light px-1 py-1 rounded-sm leading-none">
+      <span className={`text-white text-2xl font-light px-1 py-1 rounded-sm leading-none ${className}`}>
         {children}
       </span>
     </div>
