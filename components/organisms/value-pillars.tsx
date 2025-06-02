@@ -23,52 +23,61 @@ export function ValuePillars() {
       title: "Treinamento prático",
       description:
         "Corta a curva de aprendizado e acelera o retorno do investimento.",
+      showMobile: true,
     },
     {
       icon: Clock,
       title: "25 anos de experiência comercial",
       description:
         "Você evita erros que travam a maioria e foca só no que gera resultado.",
+      showMobile: true,
     },
     {
       icon: Target,
       title: "Eu vivo de vendas — não de palco",
       description: "Seu time aprende com quem já bateu meta real sob pressão.",
+      showMobile: true,
     },
     {
       icon: BookOpen,
       title: "Nada de teoria que não vira venda",
       description:
         "Conteúdo direto, aplicado no dia seguinte. Resultado rápido no caixa.",
+      showMobile: false,
     },
     {
       icon: TrendingUp,
       title: "Sua equipe já vende durante o treinamento",
       description:
         "Negócios fechados ainda na imersão. O ROI começa ali mesmo.",
+      showMobile: false,
     },
     {
       icon: Users,
       title: "Treino como se fosse meu time",
       description:
         "Entro na operação, ajusto o time e aumento conversão de verdade.",
+      showMobile: false,
     },
     {
       icon: Zap,
       title: "Vai além da sala de aula",
       description:
         "30 dias de acompanhamento com correção de rota e reforço tático.",
+      showMobile: false,
     },
     {
       icon: AlertCircle,
       title: "Zero fórmula mágica, zero blá-blá-blá",
       description: "Corto o que não funciona. Só fica o que gera venda.",
+      showMobile: false,
     },
     {
       icon: ThumbsUp,
       title: "Se não vender mais, não me chame de novo",
       description:
         "Eu assumo o risco. Se não der retorno, você não perde mais nada.",
+      showMobile: false,
     },
   ];
 
@@ -103,7 +112,8 @@ export function ValuePillars() {
           {pillars.map((pillar, index) => (
             <div
               key={index}
-              className="transform transition-all duration-300 hover:scale-105 hover:shadow-lg"
+              className={`transform transition-all duration-300 hover:scale-105 hover:shadow-lg ${pillar.showMobile === false ? "hidden md:block" : ""
+                }`}
             >
               <FeatureCard
                 icon={pillar.icon}

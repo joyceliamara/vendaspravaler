@@ -2,6 +2,8 @@
 
 import { SectionTitle } from "@/components/atoms/section-title";
 import { Card, CardContent } from "@/components/ui/card";
+import { CTAButton } from "../atoms/cta-button";
+import { Route } from "@/constants";
 
 const testimonials = [
   {
@@ -67,9 +69,9 @@ export function TestimonialCarousel() {
                   key={index}
                   className="h-full bg-dark-deeper border border-primary/10 hover:border-primary/30 transition-all"
                 >
-                  <CardContent className="p-6 flex flex-col h-full">
+                  <CardContent className="p-6 flex flex-col h-full justify-between">
                     {/* VÍDEO */}
-                    <div className="mb-4">
+                    <div><div className="mb-4">
                       <video
                         controls
                         className="w-full rounded-md"
@@ -79,16 +81,27 @@ export function TestimonialCarousel() {
                         Seu navegador não suporta vídeo.
                       </video>
                     </div>
-                    <div className="space-y-6">
-                      <div>
-                        <h4 className="font-bold text-2xl">
-                          {testimonial.name}
-                        </h4>
-                      </div>
+                      <div className="space-y-6">
+                        <div>
+                          <h4 className="font-bold text-2xl">
+                            {testimonial.name}
+                          </h4>
+                        </div>
 
-                      <p className="text-muted-foreground flex-grow mb-6">
-                        {testimonial.quote}
-                      </p>
+                        <p className="text-muted-foreground flex-grow mb-6">
+                          {testimonial.quote}
+                        </p>
+                      </div></div>
+                    <div className="flex sm:flex-row justify-center items-end relative z-10 pt-6 w-full">
+                      <CTAButton
+                        type="submit"
+                        text="Agendar reunião"
+                        variant="secondary"
+                        size="lg"
+                        withIcon
+                        className="w-full"
+                        url={Route.Trigger}
+                      />
                     </div>
                   </CardContent>
                 </Card>

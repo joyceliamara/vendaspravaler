@@ -35,7 +35,7 @@ export function TransformationShowcase() {
     <section className="w-full py-14 sm:py-24  gradient-bg ">
       <div className="container px-4 md:px-6">
         <SectionTitle
-          title="A Transformação que Sua Equipe Comercial Vai Experimentar"
+          title="A Transformação que Sua Equipe Comercial Vai Ter"
           subtitle="Veja o antes e depois de implementar o Vendas Pra Valer"
           highlightWords={["Transformação"]}
         />
@@ -48,7 +48,7 @@ export function TransformationShowcase() {
                   <XCircle className="h-6 w-6 text-destructive" />
                 </div>
                 <h3 className="text-xl text-black font-bold">
-                  ANTES do Desafio
+                  ANTES do treinamento
                 </h3>
               </div>
               <Image
@@ -76,7 +76,7 @@ export function TransformationShowcase() {
                   <CheckCircle className="h-6 w-6 text-primary" />
                 </div>
                 <h3 className="text-xl text-black font-bold">
-                  DEPOIS do Desafio
+                  DEPOIS do treinamento
                 </h3>
               </div>
               <Image

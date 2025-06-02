@@ -3,37 +3,43 @@ import { CTAButton } from "@/components/atoms/cta-button";
 import { AlertCircle } from "lucide-react";
 import { Route } from "@/constants";
 
-export function AboutMentor() {
+export function CustomerIssues() {
   const problems = [
     {
       title: "Vendedores sem comprometimento",
       description:
         "Você paga salário pra gente que não veste a camisa — e ainda carrega o time nas costas.",
+      showMobile: true,
     },
     {
       title: "Baixíssima taxa de conversão",
       description:
         "Você gasta com propaganda, marketing e perde dinheiro em cada lead mal aproveitado.",
+      showMobile: true,
     },
     {
       title: "Pouco faturamento perto do que se poderia",
       description:
         "Você mantém uma estrutura cara demais pra um resultado medíocre.",
+      showMobile: true,
     },
     {
       title: "Meta de vendas não cumprida mais um mês",
       description:
         "A empresa entra no vermelho enquanto a equipe acha tudo normal.",
+      showMobile: false,
     },
     {
       title: "Falta de uma estratégia e ações claras da equipe",
       description:
         "Sem direção, sua equipe patina e você continua apagando incêndio todo dia.",
+      showMobile: false,
     },
     {
       title: "Falta de engajamento da equipe",
       description:
         "Você corre atrás do resultado sozinho — e isso tá te levando à exaustão.",
+      showMobile: false,
     },
   ];
 
@@ -58,12 +64,12 @@ export function AboutMentor() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {/* Coluna da Esquerda */}
             <div className="space-y-6">
               {leftColumn.map((problem, index) => (
                 <div
                   key={index}
-                  className="flex items-start space-x-4 p-6 bg-dark rounded-xl hover:bg-dark/80 transition-colors"
+                  // Adicione a classe 'hidden' se showMobile for false e 'md:flex' para mostrar no desktop
+                  className={`flex items-start space-x-4 p-6 bg-dark rounded-xl hover:bg-dark/80 transition-colors ${problem.showMobile ? "" : "hidden md:flex"}`}
                 >
                   <AlertCircle className="h-6 w-6 text-primary flex-shrink-0 mt-1" />
                   <div>
@@ -78,12 +84,12 @@ export function AboutMentor() {
               ))}
             </div>
 
-            {/* Coluna da Direita */}
             <div className="space-y-6">
               {rightColumn.map((problem, index) => (
                 <div
                   key={index}
-                  className="flex items-start space-x-4 p-6 bg-dark rounded-xl hover:bg-dark/80 transition-colors"
+                  // Adicione a classe 'hidden' se showMobile for false e 'md:flex' para mostrar no desktop
+                  className={`flex items-start space-x-4 p-6 bg-dark rounded-xl hover:bg-dark/80 transition-colors ${problem.showMobile ? "" : "hidden md:flex"}`}
                 >
                   <AlertCircle className="h-6 w-6 text-primary flex-shrink-0 mt-1" />
                   <div>
