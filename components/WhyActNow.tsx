@@ -1,5 +1,7 @@
 import Image from "next/image";
 import { Button } from "./ui/button";
+import { CTAButton } from "./atoms/cta-button";
+import { Route } from "@/constants";
 
 export function WhyActNow() {
   return (
@@ -51,12 +53,13 @@ export function WhyActNow() {
               </p>
             </div>
 
-            <Button
+            <CTAButton
+              text="✅ Quero um Treinamento que Faz Vender"
+              variant="primary"
               size="lg"
-              className="w-full md:w-auto text-lg px-8 py-6 bg-primary hover:bg-primary/90 text-primary-foreground font-bold tracking-wide transition-all duration-300 transform hover:scale-105"
-            >
-              ✅ Quero um Treinamento que Faz Vender
-            </Button>
+              withIcon
+              url={Route.Trigger}
+            />
           </div>
         </div>
       </div>
