@@ -88,7 +88,7 @@ const config: Config = {
         },
       },
       backgroundImage: {
-        hero: "url('/Alee.jpg')",
+        hero: "url('/Alee.png')",
         "hero-mobile": "url('/AleMobile.jpg')",
       },
       animation: {
