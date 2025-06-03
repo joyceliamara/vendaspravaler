@@ -106,7 +106,6 @@ export function TransformationShowcase() {
             size="lg"
             className="w-full"
             url={Route.Trigger}
-            enablePingAnimation={false}
           />
         </div>
       </div>
