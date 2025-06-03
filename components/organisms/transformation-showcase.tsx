@@ -2,6 +2,8 @@ import { SectionTitle } from "@/components/atoms/section-title";
 import { Card, CardContent } from "@/components/ui/card";
 import { CheckCircle, XCircle } from "lucide-react";
 import Image from "next/image";
+import { CTAButton } from "../atoms/cta-button";
+import { Route } from "@/constants";
 
 export function TransformationShowcase() {
   const beforeAfter = [
@@ -95,6 +97,17 @@ export function TransformationShowcase() {
               </ul>
             </CardContent>
           </Card>
+        </div>
+        <div className="flex justify-center pt-10">
+          <CTAButton
+            type="submit"
+            text="✅ Quero um Treinamento que Faz Vender"
+            variant="secondary"
+            size="lg"
+            className="w-full"
+            url={Route.Trigger}
+            enablePingAnimation={false}
+          />
         </div>
       </div>
     </section>

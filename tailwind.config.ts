@@ -86,6 +86,12 @@ const config: Config = {
             transform: "translateX(100%)",
           },
         },
+        ping: {
+          "75%, 100%": {
+            transform: "scale(1.2)",
+            opacity: "0",
+          },
+        },
       },
       backgroundImage: {
         hero: "url('/Alee.png')",
@@ -94,7 +100,7 @@ const config: Config = {
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
-        marquee: "marquee 10s linear infinite",
+        marquee: "marquee 16s linear infinite",
         "marquee-fast": "marquee 10s linear infinite",
         shimmer: "shimmer 2s infinite",
       },

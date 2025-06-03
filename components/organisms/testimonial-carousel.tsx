@@ -98,9 +98,9 @@ export function TestimonialCarousel() {
                         text="Agendar reunião"
                         variant="secondary"
                         size="lg"
-                        withIcon
                         className="w-full"
                         url={Route.Trigger}
+                        enablePingAnimation={false}
                       />
                     </div>
                   </CardContent>

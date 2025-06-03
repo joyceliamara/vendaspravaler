@@ -53,13 +53,15 @@ export function WhyActNow() {
               </p>
             </div>
 
-            <CTAButton
-              text="✅ Quero um Treinamento que Faz Vender"
-              variant="primary"
-              size="lg"
-              withIcon
-              url={Route.Trigger}
-            />
+            <div className="flex justify-center">
+              <CTAButton
+                text="✅ Quero um Treinamento que Faz Vender"
+                variant="primary"
+                size="lg"
+                withIcon
+                url={Route.Trigger}
+              />
+            </div>
           </div>
         </div>
       </div>
