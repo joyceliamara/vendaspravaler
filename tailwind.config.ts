@@ -79,7 +79,7 @@ const config: Config = {
         },
         marquee: {
           "0%": { transform: "translateX(0%)" },
-          "100%": { transform: "translateX(calc(-100% / 2))" },
+          "100%": { transform: "translateX(-50%)" },
         },
         shimmer: {
           "100%": {
@@ -94,7 +94,8 @@ const config: Config = {
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
-        marquee: "marquee 3s linear infinite",
+        marquee: "marquee 10s linear infinite",
+        "marquee-fast": "marquee 10s linear infinite",
         shimmer: "shimmer 2s infinite",
       },
     },

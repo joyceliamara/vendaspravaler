@@ -1,3 +1,4 @@
+// components/SocialProofBar.tsx
 "use client";
 
 import { useEffect, useRef, useState } from "react";
@@ -35,32 +36,21 @@ const clients = [
     logo: "https://produtosnero.com.br/novo/wp-content/uploads/2021/03/3d_nero.png",
   },
   {
-    name: "Abrint",
-    logo: "https://abrint.com.br/wp-content/uploads/2024/04/LogoAtivo-1.png",
+    name: "UNINOVE",
+    logo: "https://seeklogo.com/images/U/uninove-logo-856EF2E711-seeklogo.com.png",
   },
   {
-    name: "Abrint",
-    logo: "https://images.seeklogo.com/logo-png/8/1/mary-kay-logo-png_seeklogo-88912.png",
+    name: "UNIFISA",
+    logo: "https://sabetudo.net/wp-content/uploads/2011/01/Unifisa-Trabalhe-Conosco-300x216.jpg",
   },
   {
-    name: "Abrint",
-    logo: "https://abrint.com.br/wp-content/uploads/2024/04/LogoAtivo-1.png",
-  },
-  {
-    name: "Abrint",
-    logo: "https://abrint.com.br/wp-content/uploads/2024/04/LogoAtivo-1.png",
+    name: "ProAuto",
+    logo: "https://img1.wsimg.com/isteam/ip/c85938d7-61a6-4e76-a682-4136eec84ca6/ProAuto%20Logo.png/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:600,cg:true",
   },
 ];
 
 export function SocialProofBar() {
-  const [duplicatedClients, setDuplicatedClients] = useState<typeof clients>(
-    []
-  );
   const containerRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    setDuplicatedClients([...clients, ...clients]);
-  }, []);
 
   return (
     <section className="w-full bg-dark-deeper border-y border-muted/20 py-14 sm:py-20">
@@ -76,19 +66,33 @@ export function SocialProofBar() {
         <div className="relative w-full overflow-hidden pb-14">
           <div
             ref={containerRef}
-            className="flex items-center space-x-12 animate-marquee"
+            className="flex items-center space-x-12 animate-marquee-fast sm:animate-marquee w-max flex-nowrap"
           >
-            {duplicatedClients.map((client, index) => (
+            {clients.map((client, index) => (
               <div
-                key={index}
-                className="flex-shrink-0 flex justify-center items-center opacity-70 hover:opacity-100 transition-all duration-300 gradient-bg p-4 rounded-lg h-40 w-40 2-40"
+                key={`first-${index}`} // Chave única para o React
+                className="flex-shrink-0 flex justify-center items-center opacity-70 hover:opacity-100 transition-all duration-300 gradient-bg p-4 rounded-lg h-40 w-40"
               >
                 <Image
                   src={client.logo || "/placeholder.svg"}
                   alt={client.name}
                   width={120}
                   height={40}
-                  className=" w-auto object-contain"
+                  className="w-auto object-contain"
+                />
+              </div>
+            ))}
+            {clients.map((client, index) => (
+              <div
+                key={`second-${index}`}
+                className="flex-shrink-0 flex justify-center items-center opacity-70 hover:opacity-100 transition-all duration-300 gradient-bg p-4 rounded-lg h-40 w-40"
+              >
+                <Image
+                  src={client.logo || "/placeholder.svg"}
+                  alt={client.name}
+                  width={120}
+                  height={40}
+                  className="w-auto object-contain"
                 />
               </div>
             ))}
