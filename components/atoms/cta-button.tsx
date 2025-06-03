@@ -1,3 +1,4 @@
+// CTAButton.tsx
 "use client";
 
 import { Button } from "@/components/ui/button";
@@ -15,6 +16,7 @@ interface CTAButtonProps {
   fullWidth?: boolean;
   type?: "button" | "submit" | "reset";
   url: string;
+  enablePingAnimation?: boolean; // Nova prop para controlar a animação
 }
 
 export function CTAButton({
@@ -26,6 +28,7 @@ export function CTAButton({
   fullWidth = false,
   type = "button",
   url,
+  enablePingAnimation = true,
 }: CTAButtonProps) {
   const variantClasses = {
     primary: "bg-primary text-primary-foreground hover:bg-primary/90",
@@ -52,8 +55,12 @@ export function CTAButton({
         className
       )}
     >
-      {/* <span className="absolute inset-0 z-0 inline-flex h-full w-full animate-ping bg-primary opacity-75 group-hover:animate-none rounded-lg" />
-      <span className="absolute inset-0 z-0 inline-flex h-full w-full animate-ping bg-primary opacity-60 group-hover:animate-none rounded-lg" /> */}
+      {enablePingAnimation && (
+        <>
+          <span className="absolute inset-0 z-0 inline-flex h-full w-full animate-[ping_1s_cubic-bezier(0,0,0.2,1)_infinite] bg-primary opacity-75 group-hover:animate-none rounded-lg py-5" />
+          <span className="absolute inset-0 z-0 inline-flex h-full w-full animate-[ping_1s_cubic-bezier(0,0,0.2,1)_infinite_0.2s] bg-primary opacity-60 group-hover:animate-none rounded-lg" />
+        </>
+      )}
 
       <Link href={url} target="_blank" className="relative z-10 block">
         {text}
