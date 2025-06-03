@@ -1,4 +1,3 @@
-// CTAButton.tsx
 "use client";
 
 import { Button } from "@/components/ui/button";
@@ -16,7 +15,7 @@ interface CTAButtonProps {
   fullWidth?: boolean;
   type?: "button" | "submit" | "reset";
   url: string;
-  enablePingAnimation?: boolean; // Nova prop para controlar a animação
+  enablePingAnimation?: boolean;
 }
 
 export function CTAButton({
