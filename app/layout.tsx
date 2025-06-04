@@ -13,18 +13,18 @@ const ubuntu = Ubuntu({
 });
 
 export const metadata: Metadata = {
-  title: "Vendas Pra Valer | Transforme sua Equipe Comercial em 5 Dias",
+  title: "Vendas Pra Valer | Treinamento de Equipe de Vendas e Consultoria",
   description:
-    "Aprenda a única estratégia de vendas que toda empresa PME precisa para fazer sua equipe comercial ter uma conversão de 50% ou mais com clientes em potencial.",
+    "Transforme sua equipe de vendas com treinamento de vendas online e presencial. Ideal para times de vendas, empresas de vendas e consultores de vendas, nossa empresa de vendas oferece a estratégia para sua equipe comercial converter 50% ou mais.",
   openGraph: {
-    title: "Vendas Pra Valer| Transforme sua Equipe Comercial em 5 Dias",
+    title: "Vendas Pra Valer | Treinamento de Equipe de Vendas e Consultoria",
     description:
-      "Aprenda a única estratégia de vendas que toda empresa PME precisa para fazer sua equipe comercial ter uma conversão de 50% ou mais com clientes em potencial.",
+      "Transforme sua equipe de vendas com treinamento de vendas online e presencial. Ideal para times de vendas, empresas de vendas e consultores de vendas, nossa empresa de vendas oferece a estratégia para sua equipe comercial converter 50% ou mais.",
     url: "https://desafiocodigodavenda.com.br",
     siteName: "Vendas Pra Valer",
     images: [
       {
-        url: "/og-image.jpg",
+        url: "/IMG_PALCO.jpg",
         width: 1200,
         height: 630,
         alt: "Vendas Pra Valer",
@@ -35,9 +35,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Vendas Pra Valer| Transforme sua Equipe Comercial em 5 Dias",
+    title: "Vendas Pra Valer | Treinamento de Equipe de Vendas e Consultoria",
     description:
-      "Aprenda a única estratégia de vendas que toda empresa PME precisa para fazer sua equipe comercial ter uma conversão de 50% ou mais com clientes em potencial.",
+      "Transforme sua equipe de vendas com treinamento de vendas online e presencial. Ideal para times de vendas, empresas de vendas e consultores de vendas, nossa empresa de vendas oferece a estratégia para sua equipe comercial converter 50% ou mais.",
     images: ["/twitter-image.jpg"],
   },
 };

@@ -10,9 +10,9 @@ import { WhyActNow } from "@/components/WhyActNow";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Vendas Pra Valer | Transforme sua Equipe Comercial em 5 Dias",
+  title: "Vendas Pra Valer | Treinamento de Equipe de Vendas e Consultoria",
   description:
-    "Aprenda a única estratégia de vendas que toda empresa PME precisa para fazer sua equipe comercial ter uma conversão de 50% ou mais com clientes em potencial.",
+    "Transforme sua equipe de vendas com treinamento de vendas online e presencial. Ideal para times de vendas, empresas de vendas e consultores de vendas, nossa empresa de vendas oferece a estratégia para sua equipe comercial converter 50% ou mais.",
 };
 
 export default function Home() {

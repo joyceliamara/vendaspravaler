@@ -77,7 +77,7 @@ export function HeroSection() {
             <div className="flex sm:flex-row justify-start relative z-10 pt-6">
               <CTAButton
                 type="submit"
-                text="✅ Quero um Treinamento que Faz Vender"
+                text="✅ Quero Agendar uma Reunião"
                 variant="primary"
                 size="lg"
                 withIcon

@@ -27,7 +27,7 @@ export function CustomerIssues() {
       title: "Meta de vendas não cumprida mais um mês",
       description:
         "A empresa entra no vermelho enquanto a equipe acha tudo normal.",
-      showMobile: false,
+      showMobile: true,
     },
     {
       title: "Falta de uma estratégia e ações claras da equipe",
@@ -57,7 +57,7 @@ export function CustomerIssues() {
               highlightWords={["vendendo"]}
             />
 
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+            <p className="text-1xl text-muted-foreground max-w-3xl mx-auto">
               Você não está sozinho. A maioria dos líderes sabe que seus
               vendedores têm potencial, mas não sabem como destravar.
             </p>
@@ -107,7 +107,7 @@ export function CustomerIssues() {
 
           <div className="sm:pt-8 text-center">
             <CTAButton
-              text="✅ Quero um Treinamento que Faz Vender"
+              text="✅ Quero Agendar uma Reunião"
               variant="primary"
               size="lg"
               withIcon

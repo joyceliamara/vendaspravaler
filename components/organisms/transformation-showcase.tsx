@@ -101,7 +101,7 @@ export function TransformationShowcase() {
         <div className="flex justify-center pt-10">
           <CTAButton
             type="submit"
-            text="✅ Quero um Treinamento que Faz Vender"
+            text="✅ Quero Agendar uma Reunião"
             variant="secondary"
             size="lg"
             className="w-full"

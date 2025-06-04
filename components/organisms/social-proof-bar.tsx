@@ -99,7 +99,7 @@ export function SocialProofBar() {
           </div>
         </div>
         <CTAButton
-          text="✅ Quero um Treinamento que Faz Vender"
+          text="✅ Quero Agendar uma Reunião"
           variant="primary"
           size="lg"
           withIcon

@@ -11,7 +11,7 @@ export function WhyActNow() {
           {/* Imagem */}
           <div className="relative w-full h-[400px] md:h-[600px] rounded-2xl overflow-hidden shadow-2xl">
             <Image
-              src="/Toniferreiraphotos-6996.jpg"
+              src="/Toniferreiraphotos-69966.jpg"
               alt="Foto de Toni Ferreira"
               fill
               className="object-cover"
@@ -55,12 +55,13 @@ export function WhyActNow() {
 
             <div className="flex justify-center">
               <CTAButton
-                text="✅ Quero um Treinamento que Faz Vender"
+                text="✅ Quero Agendar uma Reunião"
                 variant="primary"
                 size="lg"
                 withIcon
                 url={Route.Trigger}
               />
+
             </div>
           </div>
         </div>

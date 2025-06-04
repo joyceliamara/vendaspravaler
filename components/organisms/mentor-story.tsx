@@ -40,7 +40,7 @@ export function MentorStory() {
             </div>
             <div className="pt-4 md:pt-6">
               <CTAButton
-                text="✅ Quero um Treinamento que Faz Vender"
+                text="✅ Quero Agendar uma Reunião"
                 variant="primary"
                 size="sm"
                 withIcon
@@ -53,7 +53,7 @@ export function MentorStory() {
             <div className="relative group">
               <div className="absolute -inset-1 bg-gradient-to-r from-primary to-primary/50 rounded-2xl blur opacity-30 group-hover:opacity-50 transition duration-500" />
               <Image
-                src="/DIA1.JPG"
+                src="/DIAUM.JPG"
                 width={600}
                 height={500}
                 alt="Alexsandro Silva - Especialista em Vendas"

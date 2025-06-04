@@ -19,30 +19,30 @@ import { Route } from "@/constants";
 export function ValuePillars() {
   const pillars = [
     {
+      icon: Zap,
+      title: "Vai além da sala de aula",
+      description:
+        "30 dias de acompanhamento com correção de rota e reforço tático.",
+      showMobile: true,
+    },
+    {
       icon: CheckCircle2,
       title: "Treinamento prático",
       description:
         "Corta a curva de aprendizado e acelera o retorno do investimento.",
-      showMobile: true,
+      showMobile: false,
     },
     {
       icon: Clock,
       title: "25 anos de experiência comercial",
       description:
         "Você evita erros que travam a maioria e foca só no que gera resultado.",
-      showMobile: true,
+      showMobile: false,
     },
     {
       icon: Target,
       title: "Eu vivo de vendas — não de palco",
       description: "Seu time aprende com quem já bateu meta real sob pressão.",
-      showMobile: true,
-    },
-    {
-      icon: BookOpen,
-      title: "Nada de teoria que não vira venda",
-      description:
-        "Conteúdo direto, aplicado no dia seguinte. Resultado rápido no caixa.",
       showMobile: false,
     },
     {
@@ -50,8 +50,16 @@ export function ValuePillars() {
       title: "Sua equipe já vende durante o treinamento",
       description:
         "Negócios fechados ainda na imersão. O ROI começa ali mesmo.",
-      showMobile: false,
+      showMobile: true,
     },
+    {
+      icon: BookOpen,
+      title: "Nada de teoria que não vira venda",
+      description:
+        "Conteúdo direto, aplicado no dia seguinte. Resultado rápido no caixa.",
+      showMobile: true,
+    },
+
     {
       icon: Users,
       title: "Treino como se fosse meu time",
@@ -59,13 +67,7 @@ export function ValuePillars() {
         "Entro na operação, ajusto o time e aumento conversão de verdade.",
       showMobile: false,
     },
-    {
-      icon: Zap,
-      title: "Vai além da sala de aula",
-      description:
-        "30 dias de acompanhamento com correção de rota e reforço tático.",
-      showMobile: false,
-    },
+
     {
       icon: AlertCircle,
       title: "Zero fórmula mágica, zero blá-blá-blá",
@@ -77,7 +79,7 @@ export function ValuePillars() {
       title: "Se não vender mais, não me chame de novo",
       description:
         "Eu assumo o risco. Se não der retorno, você não perde mais nada.",
-      showMobile: false,
+      showMobile: true,
     },
   ];
 
@@ -99,7 +101,7 @@ export function ValuePillars() {
 
           <div className="relative w-full max-w-4xl aspect-video rounded-2xl overflow-hidden shadow-2xl transform transition-transform duration-500 hover:scale-105">
             <Image
-              src="/IMG_2996.jpg"
+              src="/IMG_PALCO.jpg"
               alt="Ale em ação"
               fill
               className="object-cover"
@@ -128,7 +130,7 @@ export function ValuePillars() {
         <div className="flex flex-col items-center mt-14">
           <div className="sm:pt-4">
             <CTAButton
-              text="✅ Quero um Treinamento que Faz Vender"
+              text="✅ Quero Agendar uma Reunião"
               variant="primary"
               size="sm"
               withIcon
