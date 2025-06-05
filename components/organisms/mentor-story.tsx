@@ -5,7 +5,7 @@ import Image from "next/image";
 import { CTAButton } from "@/components/atoms/cta-button";
 import { Award, BarChart3, CheckCircle, Target, Users } from "lucide-react";
 import { Route } from "@/constants";
-import dinamicaTreinamentoEquipe from "@/public/dinamica-treinamento-equipe.webp";
+import dinamicaTreinamentoEquipe from "../../public/dinamica-treinamento-equipe.webp";
 
 const credentials = [
   { icon: Users, text: "15.977+ Clientes" },
