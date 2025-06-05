@@ -1,4 +1,5 @@
-import { SectionTitle } from "@/components/atoms/section-title";
+"use client";
+
 import { FeatureCard } from "@/components/molecules/feature-card";
 import {
   CheckCircle2,
@@ -12,7 +13,6 @@ import {
   ThumbsUp,
 } from "lucide-react";
 import Image from "next/image";
-import { Button } from "@/components/ui/button";
 import { CTAButton } from "../atoms/cta-button";
 import { Route } from "@/constants";
 
