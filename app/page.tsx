@@ -1,12 +1,12 @@
 import { HeroSection } from "@/components/organisms/hero-section";
 import { SocialProofBar } from "@/components/organisms/social-proof-bar";
 import { ValuePillars } from "@/components/organisms/value-pillars";
-import { CustomerIssues } from "@/components/organisms/about-mentor";
+import { CustomerIssues } from "@/components/organisms/customer-issues";
 import { FooterCTADouble } from "@/components/organisms/footer-cta-double";
 import { MentorStory } from "@/components/organisms/mentor-story";
 import { TransformationShowcase } from "@/components/organisms/transformation-showcase";
 import { TestimonialCarousel } from "@/components/organisms/testimonial-carousel";
-import { WhyActNow } from "@/components/WhyActNow";
+import { WhyActNow } from "@/components/organisms/why-act-now";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
