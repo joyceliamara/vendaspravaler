@@ -2,22 +2,31 @@
 
 import { CTAButton } from "@/components/atoms/cta-button";
 import TextSelection from "../atoms/text-selection";
-import React, { useState } from "react";
+import React from "react";
 import { Route } from "@/constants";
 import Image from "next/image";
 import aleMobile from "@/public/AleMobile.jpg";
+import aleDesktop from "@/public/Ale.png";
 
 export function HeroSection() {
-  const [name, setName] = useState<string>("");
-  const [phone, setPhone] = useState<string>("");
-  const [email, setEmail] = useState<string>("");
-
-  const handleSubmit = (event: React.FormEvent) => {
-    event.preventDefault();
-    console.log("dados", name, phone, email);
-  };
   return (
-    <section className="bg-hero-mobile md:bg-hero bg-cover bg-no-repeat  w-full h-full min-h-[83vh] flex flex-col items-center relative overflow-hidden pb-10 md:pb-16 z-50">
+    <section className="w-full h-full min-h-[83vh] flex flex-col items-center relative overflow-hidden pb-10 md:pb-16 z-50">
+      <Image
+        src={aleDesktop} 
+        alt="Background Alexsandro Silva"
+        fill
+        priority 
+        className="object-cover hidden md:block"
+        sizes="(max-width: 768px) 100vw, 50vw" 
+      />
+      <Image
+        src={aleMobile} 
+        alt="Background Alexsandro Silva Mobile"
+        fill
+        priority 
+        className="object-cover md:hidden"
+        sizes="100vw"
+      />
       <div className="fixed w-full flex justify-center bg-destructive text-white text-center py-2 z-50">
         <span className=" font-semibold text-sm px-10 sm:px-5 text-center leading-none">
           Apenas 20 vagas, mais de 2.000 acessos por dia nesse site!
@@ -44,36 +53,6 @@ export function HeroSection() {
               </TextSelection>
             </h1>
 
-            {/* <form onSubmit={handleSubmit}>
-              <div className="bg-white/5 border border-gray-700 rounded-xl p-6 flex flex-col justify-center space-y-4 bg-blend-luminosity">
-                <div className="pb-3 border-b border-gray-600">
-                  <span className="text-center text-xl w-full block text-white">
-                    Preencha o formulário para a nossa equipe entrar em contato:
-                  </span>
-                </div>
-                <div className="flex flex-col gap-2">
-                  <Input
-                    value={name}
-                    onChange={(e) => setName(e.target.value)}
-                    placeholder="Digite seu nome"
-                    className="bg-background/60"
-                    required
-                  />
-                  <Input
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
-                    placeholder="Digite seu email"
-                    required
-                  />
-                  <Input
-                    value={phone}
-                    onChange={(e) => setPhone(e.target.value)}
-                    placeholder="Digite seu telefone"
-                    required
-                  />
-                </div>
-              </div>
-            </form> */}
             <div className="flex sm:flex-row justify-start relative z-10 pt-6">
               <CTAButton
                 type="submit"
