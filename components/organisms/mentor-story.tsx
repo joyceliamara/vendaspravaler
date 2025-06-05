@@ -1,3 +1,5 @@
+"use client";
+
 import { SectionTitle } from "@/components/atoms/section-title";
 import Image from "next/image";
 import { CTAButton } from "@/components/atoms/cta-button";
