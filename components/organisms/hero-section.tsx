@@ -5,8 +5,8 @@ import TextSelection from "../atoms/text-selection";
 import React from "react";
 import { Route } from "@/constants";
 import Image from "next/image";
-import aleMobile from "@/public/AleMobile.jpg";
-import aleDesktop from "@/public/Ale.png";
+import aleMobile from "@/public/ale-background-mobile.webp";
+import aleDesktop from "@/public/background-ale-mobile.webp";
 
 export function HeroSection() {
   return (
