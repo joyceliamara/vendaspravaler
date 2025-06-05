@@ -1,3 +1,5 @@
+"use client";
+
 import { SectionTitle } from "@/components/atoms/section-title";
 import { Card, CardContent } from "@/components/ui/card";
 import { CheckCircle, XCircle } from "lucide-react";
