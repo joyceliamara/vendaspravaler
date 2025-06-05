@@ -6,6 +6,8 @@ import { CheckCircle, XCircle } from "lucide-react";
 import Image from "next/image";
 import { CTAButton } from "../atoms/cta-button";
 import { Route } from "@/constants";
+import homemPreocupado from "../../public/homem-preocupado.webp";
+import mulherFeliz from "../../public/mulher-feliz.webp";
 
 export function TransformationShowcase() {
   const beforeAfter = [
@@ -57,7 +59,7 @@ export function TransformationShowcase() {
               </div>
               <Image
                 alt="homem preocupado"
-                src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/BnF2IWZAa64jnI8iDnO9/media/fdb50923-aa0e-4ada-8d40-3d056d342b91.webp"
+                src={homemPreocupado}
                 width={650}
                 height={400}
                 className="sm:h-[300px]"
@@ -85,7 +87,7 @@ export function TransformationShowcase() {
               </div>
               <Image
                 alt="mulher animada"
-                src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/BnF2IWZAa64jnI8iDnO9/media/c5aa9ab9-af05-442d-99de-d0471919533f.webp"
+                src={mulherFeliz}
                 width={600}
                 height={400}
               />
