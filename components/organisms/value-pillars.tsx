@@ -15,6 +15,7 @@ import {
 import Image from "next/image";
 import { CTAButton } from "../atoms/cta-button";
 import { Route } from "@/constants";
+import apresentacaoVendasImpacto from "@/public/apresentacao-vendas-impacto.webp";
 
 export function ValuePillars() {
   const pillars = [
@@ -101,11 +102,11 @@ export function ValuePillars() {
 
           <div className="relative w-full max-w-4xl aspect-video rounded-2xl overflow-hidden shadow-2xl transform transition-transform duration-500 hover:scale-105">
             <Image
-              src="/IMG_PALCO.jpg"
-              alt="Ale em ação"
-              fill
+              src={apresentacaoVendasImpacto}
+              alt="Apresentação de Vendas com Alexsandro Silva"
               className="object-cover"
               priority
+              fill
             />
           </div>
         </div>
@@ -114,8 +115,9 @@ export function ValuePillars() {
           {pillars.map((pillar, index) => (
             <div
               key={index}
-              className={`transform transition-all duration-300 hover:scale-105 hover:shadow-lg ${pillar.showMobile === false ? "hidden md:block" : ""
-                }`}
+              className={`transform transition-all duration-300 hover:scale-105 hover:shadow-lg ${
+                pillar.showMobile === false ? "hidden md:block" : ""
+              }`}
             >
               <FeatureCard
                 icon={pillar.icon}
