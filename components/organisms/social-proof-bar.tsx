@@ -4,57 +4,47 @@ import { useRef } from "react";
 import Image from "next/image";
 import { CTAButton } from "../atoms/cta-button";
 import { Route } from "@/constants";
-import giovannaBabyLogo from "@/public/logos/giovanna-baby-logo.webp";
-import avonLogo from "@/public/logos/avon-logo.webp";
-import sodexoLogo from "@/public/logos/sodexo-logo.webp";
-import sebraeLogo from "@/public/logos/sebrae-logo.png";
-import leCasaLogo from "@/public/logos/lecasa-logo.webp";
-import coplacanaLogo from "@/public/logos/coplacana-logo.webp";
-import uninoveLogo from "@/public/logos/uninove-logo.webp";
-import unifisaLogo from "@/public/logos/unifisa-logo.webp";
-import proAutoLogo from "@/public/logos/proauto-logo.webp";
-import neroLogo from "@/public/logos/nero-logo.webp";
 
 const clients = [
   {
     name: "Giovanna Baby",
-    logo: giovannaBabyLogo,
+    logo: "https://vectorseek.com/wp-content/uploads/2024/01/Giovanna-Baby-Logo-Vector.svg-.png",
   },
   {
     name: "AVON",
-    logo: avonLogo,
+    logo: "https://gkpb.com.br/wp-content/uploads/2021/01/novo-logo-avon-png.png",
   },
   {
     name: "SODEXO",
-    logo: sodexoLogo,
+    logo: "https://edge.sitecorecloud.io/sodexofrance1-sodexocorpsites-prod-e74c/media/Project/Sodexo-Corp/Americas/BR/Media/Images/Logos---Icons-100-x-100/Sodexo_Logotype_Blue.png?h=220&w=970",
   },
   {
     name: "SEBRAE",
-    logo: sebraeLogo,
+    logo: "https://www.sebrae.com.br/Sebrae/Portal%20Sebrae/resources/images/icons/portal/sb-icon__logo-sebrae-white.svg",
   },
   {
     name: "Le Kasa",
-    logo: leCasaLogo,
+    logo: "https://acdn-us.mitiendanube.com/stores/004/525/681/themes/common/logo-619214983-1748266593-b4a8096adb67d58b72978afec2ac90cf1748266593.png?0",
   },
   {
     name: "Coplacana",
-    logo: coplacanaLogo,
+    logo: "https://www.coplacana.com.br/wp-content/uploads/2018/07/meta.png",
   },
   {
     name: "Produtos Nero",
-    logo: neroLogo,
+    logo: "https://produtosnero.com.br/novo/wp-content/uploads/2021/03/3d_nero.png",
   },
   {
     name: "UNINOVE",
-    logo: uninoveLogo,
+    logo: "https://seeklogo.com/images/U/uninove-logo-856EF2E711-seeklogo.com.png",
   },
   {
     name: "UNIFISA",
-    logo: unifisaLogo,
+    logo: "https://sabetudo.net/wp-content/uploads/2011/01/Unifisa-Trabalhe-Conosco-300x216.jpg",
   },
   {
     name: "ProAuto",
-    logo: proAutoLogo,
+    logo: "https://img1.wsimg.com/isteam/ip/c85938d7-61a6-4e76-a682-4136eec84ca6/ProAuto%20Logo.png/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:600,cg:true",
   },
 ];
 
@@ -88,7 +78,6 @@ export function SocialProofBar() {
                   width={120}
                   height={40}
                   className="w-auto object-contain"
-                  loading="lazy"
                 />
               </div>
             ))}
@@ -103,7 +92,6 @@ export function SocialProofBar() {
                   width={120}
                   height={40}
                   className="w-auto object-contain"
-                  loading="lazy"
                 />
               </div>
             ))}
