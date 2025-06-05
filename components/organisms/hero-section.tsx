@@ -5,25 +5,25 @@ import TextSelection from "../atoms/text-selection";
 import React from "react";
 import { Route } from "@/constants";
 import Image from "next/image";
-import aleMobile from "@/public/ale-background-mobile.webp";
-import aleDesktop from "@/public/background-ale-mobile.webp";
+import aleMobile from "@/public/background-ale-mobile.webp";
+import aleDesktop from "@/public/ale-background-desktop.webp";
 
 export function HeroSection() {
   return (
     <section className="w-full h-full min-h-[83vh] flex flex-col items-center relative overflow-hidden pb-10 md:pb-16 z-50">
       <Image
-        src={aleDesktop} 
+        src={aleDesktop}
         alt="Background Alexsandro Silva"
         fill
-        priority 
-        className="object-cover hidden md:block"
-        sizes="(max-width: 768px) 100vw, 50vw" 
+        priority
+        className="object-cover object-top bg-no-repeat invert-0 hidden md:block"
+        sizes="(max-width: 768px) 100vw, 50vw"
       />
       <Image
-        src={aleMobile} 
+        src={aleMobile}
         alt="Background Alexsandro Silva Mobile"
         fill
-        priority 
+        priority
         className="object-cover md:hidden"
         sizes="100vw"
       />
