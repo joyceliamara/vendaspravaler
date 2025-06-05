@@ -1,3 +1,4 @@
+"use client";
 import { SectionTitle } from "@/components/atoms/section-title";
 import { CTAButton } from "@/components/atoms/cta-button";
 import { AlertCircle } from "lucide-react";
