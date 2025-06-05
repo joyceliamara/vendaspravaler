@@ -5,6 +5,7 @@ import Image from "next/image";
 import { CTAButton } from "@/components/atoms/cta-button";
 import { Award, BarChart3, CheckCircle, Target, Users } from "lucide-react";
 import { Route } from "@/constants";
+import dinamicaTreinamentoEquipe from "@/public/dinamica-treinamento-equipe.webp";
 
 const credentials = [
   { icon: Users, text: "15.977+ Clientes" },
@@ -23,7 +24,7 @@ export function MentorStory() {
             <SectionTitle
               title="Quem é o cara que vive de vendas há 25 anos, já ajudou 15.977 clientes e gerou R$ 63.000.000,00 em faturamento?"
               align="left"
-              highlightWords={['vive de vendas']}
+              highlightWords={["vive de vendas"]}
             />
             <div className="space-y-4 md:space-y-6">
               <div className="p-4 md:p-6 bg-background/50 backdrop-blur-sm rounded-xl border border-primary/10">
@@ -55,7 +56,7 @@ export function MentorStory() {
             <div className="relative group">
               <div className="absolute -inset-1 bg-gradient-to-r from-primary to-primary/50 rounded-2xl blur opacity-30 group-hover:opacity-50 transition duration-500" />
               <Image
-                src="/DIAUM.jpg"
+                src={dinamicaTreinamentoEquipe}
                 width={600}
                 height={500}
                 alt="Alexsandro Silva - Especialista em Vendas"
