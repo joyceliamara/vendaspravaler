@@ -1,6 +1,7 @@
 "use client";
 
-import React, { useState } from 'react';
+import Image from "next/image";
+import React, { useState } from "react";
 
 interface LazyVimeoVideoProps {
   vimeoId: string;
@@ -26,9 +27,11 @@ export function LazyVimeoVideo({
     >
       {!loaded && (
         <div className="absolute inset-0 bg-gray-200 flex items-center justify-center">
-          <img
+          <Image
             src={thumbnailUrl}
             alt={`Thumbnail for ${title}`}
+            width={200}
+            height={200}
             className="absolute inset-0 w-full h-full object-cover"
             loading="lazy"
           />
