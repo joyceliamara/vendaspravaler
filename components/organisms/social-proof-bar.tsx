@@ -1,7 +1,6 @@
-// components/SocialProofBar.tsx
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useRef } from "react";
 import Image from "next/image";
 import { CTAButton } from "../atoms/cta-button";
 import { Route } from "@/constants";
@@ -70,7 +69,7 @@ export function SocialProofBar() {
           >
             {clients.map((client, index) => (
               <div
-                key={`first-${index}`} // Chave única para o React
+                key={`first-${index}`}
                 className="flex-shrink-0 flex justify-center items-center opacity-70 hover:opacity-100 transition-all duration-300 gradient-bg p-4 rounded-lg h-40 w-40"
               >
                 <Image
