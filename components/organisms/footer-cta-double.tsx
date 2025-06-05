@@ -1,5 +1,4 @@
-import { CTAButton } from "@/components/atoms/cta-button";
-import Link from "next/link";
+"use client";
 
 export function FooterCTADouble() {
   return (
