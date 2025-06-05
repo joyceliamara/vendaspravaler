@@ -11,7 +11,7 @@ const testimonials = [
     name: "Rafael Liberto",
     role: "Empresário",
     videoId: "1090288753",
-    poster: "/thumbs/Rafael.jpg",
+    poster: "/thumbs/Rafael.webp",
     quote:
       "É diferente de outros, que você tem um resultado assim assado só que é um fogo momentâneo. A minha experiência foi quase inexplicável. Vale muito a pena. É um processo muito valioso, só que a gente tem que se permitir e jogar de cabeça no processo.",
   },
@@ -19,7 +19,7 @@ const testimonials = [
     name: "Patricia American",
     role: "Gestora Comercial",
     videoId: "1090289245",
-    poster: "/thumbs/Patricia.jpg",
+    poster: "/thumbs/Patricia.webp",
     quote:
       "Não sabia exatamente o que era, mas sabia que seria uma transformação poderosa, a experiência foi bem transformadora, me surpreendeu positivamente, ele lida com técnicas, dinâmicas bem diferentes do convencional, diferente do que estamos acostumados. Valeu muito a experiência, nunca tinha feito um treinamento tão longo, foi uma vivência bem diferente, valeu tudo o que a gente investiu.",
   },
@@ -27,7 +27,7 @@ const testimonials = [
     name: "Andrecy Sarges",
     role: "Diretor Comercial",
     videoId: "1090288326",
-    poster: "/thumbs/Andrecy.jpg",
+    poster: "/thumbs/Andrecy.webp",
     quote:
       "Esse programa que o Ale veio fazer é muito surreal, na verdade é muito diferente do que eu já participei. O Ale veio para resolver o problema, ele não está para agradar para passar a mão na cabeça. Ele faz a gente enxergar aquilo que muitas vezes a gente não consegue ver.",
   },
@@ -35,7 +35,7 @@ const testimonials = [
     name: "Olívia Choi",
     role: "CEO",
     videoId: "1090290188",
-    poster: "/thumbs/Olivia.jpg",
+    poster: "/thumbs/Olivia.webp",
     quote:
       'A maior dificuldade que eu tinha com a equipe comercial, era fazer com que eles não trabalhassem mais do jeito antigo, que era um jeito meio selvagem. A gente vinha de uma forma que eu achei que estávamos caminhando certo, só que tem muita coisa que vamos melhorar.',
   },
@@ -43,7 +43,7 @@ const testimonials = [
     name: "Lucas Lopes",
     role: "Gerente de Vendas",
     videoId: "1090289768",
-    poster: "/thumbs/Lucas.jpg",
+    poster: "/thumbs/Lucas.webp",
     quote:
       "O treinamento foi uma experiência excepcional, foi muito louco porque a gente chegou sem saber como seria compartilhado. Achei que seria de uma forma que todo mundo faz que ia ensinar, dar exemplo, só que foi de uma forma totalmente diferente, ultrapassou as minhas expectativas.",
   },
@@ -51,7 +51,7 @@ const testimonials = [
     name: "Sally Dias",
     role: "Empresária",
     videoId: "1090289456",
-    poster: "/thumbs/Sally.jpg",
+    poster: "/thumbs/Sally.webp",
     quote:
       "O ticket médio de vendas era 20, 25 mil, a gente se sentiu mais seguro, mais preparado, a gente conseguiu realmente entender as necessidades do cliente e fez a venda sair tranquilamente e foi R$180.000,00. Já fiz muito curso de vendas, muito treinamento e eu esperava algo a mais, foi surpreendente pra mim as técnicas aplicadas porque realmente me fez ficar desconfortável entrar no desconforto e saber a importância disso. Mudou muito, falando em números quase 100%.",
   },
