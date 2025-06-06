@@ -4,8 +4,7 @@ import { CTAButton } from "@/components/atoms/cta-button";
 import TextSelection from "../atoms/text-selection";
 import React from "react";
 import { Route } from "@/constants";
-import Image from "next/image";
-import dinamicaTreinamentoEquipe from "../../public/treinamento-equipe-usar-essaa.webp";
+
 
 export function HeroSection() {
   return (
@@ -47,13 +46,13 @@ export function HeroSection() {
               />
             </div>
           </div>
-          <Image
+          {/* <Image
             src={dinamicaTreinamentoEquipe}
             width={300}
             height={300}
             alt="Alexsandro Silva - Especialista em Vendas"
             className=""
-          />
+          /> */}
           {/* <div className="absolute inset-0 bg-grid-white/[0.02] bg-[size:30px_30px] pointer-events-none"></div> */}
         </div>
       </div>

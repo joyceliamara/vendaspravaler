@@ -14,8 +14,8 @@ export function WhyActNow() {
               src={treinamentoEquipe}
               alt="Ale treinando equipe comercial"
               className="object-cover"
-              priority
               fill
+              loading="lazy"
             />
           </div>
 

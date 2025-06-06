@@ -105,7 +105,7 @@ export function ValuePillars() {
               src={apresentacaoVendasImpacto}
               alt="Apresentação de Vendas com Alexsandro Silva"
               className="object-cover"
-              priority
+              loading="lazy"
               fill
             />
           </div>
@@ -115,9 +115,8 @@ export function ValuePillars() {
           {pillars.map((pillar, index) => (
             <div
               key={index}
-              className={`transform transition-all duration-300 hover:scale-105 hover:shadow-lg ${
-                pillar.showMobile === false ? "hidden md:block" : ""
-              }`}
+              className={`transform transition-all duration-300 hover:scale-105 hover:shadow-lg ${pillar.showMobile === false ? "hidden md:block" : ""
+                }`}
             >
               <FeatureCard
                 icon={pillar.icon}
