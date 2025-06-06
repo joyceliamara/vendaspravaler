@@ -63,6 +63,8 @@ export function TransformationShowcase() {
                 width={650}
                 height={400}
                 className="sm:h-[300px]"
+                loading="lazy"
+
               />
               <ul className="space-y-4">
                 {beforeAfter.map((item, index) => (
@@ -90,6 +92,7 @@ export function TransformationShowcase() {
                 src={mulherFeliz}
                 width={600}
                 height={400}
+                loading="lazy"
               />
               <ul className="space-y-4">
                 {beforeAfter.map((item, index) => (
