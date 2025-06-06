@@ -5,28 +5,11 @@ import TextSelection from "../atoms/text-selection";
 import React from "react";
 import { Route } from "@/constants";
 import Image from "next/image";
-import aleMobile from "@/public/background-ale-mobile.webp";
-import aleDesktop from "@/public/ale-background-desktop.webp";
+import dinamicaTreinamentoEquipe from "../../public/treinamento-equipe-usar-essaa.webp";
 
 export function HeroSection() {
   return (
     <section className="w-full h-full min-h-[83vh] flex flex-col items-center relative overflow-hidden pb-10 md:pb-16 z-50">
-      <Image
-        src={aleDesktop}
-        alt="Background Alexsandro Silva"
-        fill
-        priority
-        className="object-cover object-top bg-no-repeat invert-0 hidden md:block"
-        sizes="(max-width: 768px) 100vw, 50vw"
-      />
-      <Image
-        src={aleMobile}
-        alt="Background Alexsandro Silva Mobile"
-        fill
-        priority
-        className="object-cover md:hidden"
-        sizes="100vw"
-      />
       <div className="fixed w-full flex justify-center bg-destructive text-white text-center py-2 z-50">
         <span className=" font-semibold text-sm px-10 sm:px-5 text-center leading-none">
           Apenas 20 vagas, mais de 2.000 acessos por dia nesse site!
@@ -64,7 +47,15 @@ export function HeroSection() {
               />
             </div>
           </div>
-          <div className="absolute inset-0 bg-grid-white/[0.02] bg-[size:30px_30px] pointer-events-none"></div>
+          <Image
+            src={dinamicaTreinamentoEquipe}
+            width={600}
+            height={500}
+            alt="Alexsandro Silva - Especialista em Vendas"
+            className="w-full h-auto object-cover rounded-xl shadow-2xl transform group-hover:scale-[1.02] transition duration-500"
+            priority
+          />
+          {/* <div className="absolute inset-0 bg-grid-white/[0.02] bg-[size:30px_30px] pointer-events-none"></div> */}
         </div>
       </div>
     </section>
