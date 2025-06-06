@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { CTAButton } from "../atoms/cta-button";
 import { Route } from "@/constants";
-import treinamentoEquipe from "@/public/treinamento-equipe.webp";
+import treinamentoEquipe from "@/public/treinamento-equipe-usar-essaa.webp";
 
 export function WhyActNow() {
   return (

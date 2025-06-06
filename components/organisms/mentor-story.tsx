@@ -60,10 +60,9 @@ export function MentorStory() {
                 width={600}
                 height={500}
                 alt="Alexsandro Silva - Especialista em Vendas"
-                loading="lazy"
+                className="w-full h-auto object-cover rounded-xl shadow-2xl transform group-hover:scale-[1.02] transition duration-500"
+                priority
               />
-
-
             </div>
 
             {/* Card de Credenciais */}
