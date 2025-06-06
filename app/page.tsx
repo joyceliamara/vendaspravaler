@@ -17,7 +17,7 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between w-full overflow-x-hidden">
+    <main className="flex min-h-screen flex-col items-center justify-between w-full overflow-x-hidden overflow-y-hidden">
       <HeroSection />
       <SocialProofBar />
       <MentorStory />
