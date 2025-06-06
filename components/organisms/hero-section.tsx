@@ -49,11 +49,10 @@ export function HeroSection() {
           </div>
           <Image
             src={dinamicaTreinamentoEquipe}
-            width={600}
-            height={500}
+            width={300}
+            height={300}
             alt="Alexsandro Silva - Especialista em Vendas"
-            className="w-full h-auto object-cover rounded-xl shadow-2xl transform group-hover:scale-[1.02] transition duration-500"
-            priority
+            className=""
           />
           {/* <div className="absolute inset-0 bg-grid-white/[0.02] bg-[size:30px_30px] pointer-events-none"></div> */}
         </div>

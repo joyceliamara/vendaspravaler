@@ -1,5 +1,4 @@
 import { HeroSection } from "@/components/organisms/hero-section";
-import { SocialProofBar } from "@/components/organisms/social-proof-bar";
 import { ValuePillars } from "@/components/organisms/value-pillars";
 import { CustomerIssues } from "@/components/organisms/customer-issues";
 import { FooterCTADouble } from "@/components/organisms/footer-cta-double";
@@ -18,7 +17,7 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between w-full overflow-x-hidden">
       <HeroSection />
-      <SocialProofBar />
+      {/* <SocialProofBar /> */}
       <MentorStory />
       <CustomerIssues />
       <ValuePillars />
