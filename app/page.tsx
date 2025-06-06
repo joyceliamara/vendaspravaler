@@ -6,6 +6,8 @@ import { MentorStory } from "@/components/organisms/mentor-story";
 import { TransformationShowcase } from "@/components/organisms/transformation-showcase";
 import { WhyActNow } from "@/components/organisms/why-act-now";
 import type { Metadata } from "next";
+import { SocialProofBar } from "@/components/organisms/social-proof-bar";
+import { TestimonialCarousel } from "@/components/organisms/testimonial-carousel";
 
 export const metadata: Metadata = {
   title: "Vendas Pra Valer | Treinamento de Equipe de Vendas e Consultoria",
@@ -17,11 +19,11 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between w-full overflow-x-hidden">
       <HeroSection />
-      {/* <SocialProofBar /> */}
+      <SocialProofBar />
       <MentorStory />
       <CustomerIssues />
       <ValuePillars />
-      {/* <TestimonialCarousel /> */}
+      <TestimonialCarousel />
       <TransformationShowcase />
       <WhyActNow />
       <FooterCTADouble />
