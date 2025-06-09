@@ -24,7 +24,7 @@ export function HeroSection() {
         alt="Background Alexsandro Silva Mobile"
         fill
         priority
-        className="object-cover md:hidden"
+        className="object-cover object-top md:hidden"
         sizes="100vw"
       />
       <div className="fixed w-full flex justify-center bg-destructive text-white text-center py-2 z-50">
