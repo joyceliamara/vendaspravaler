@@ -91,6 +91,7 @@ export function SocialProofBar() {
                   alt={client.name}
                   width={120}
                   height={40}
+                  priority
                   className="w-auto object-contain"
                 />
               </div>
